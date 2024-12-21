@@ -12,6 +12,9 @@ form.addEventListener('submit', async (event) => {
 
         if (response.ok) {
             alert('Message sent successfully!');
+            form.reset(); // Clears the entire form
+            // OR, to clear just the specific input:
+            // messageInput.value = '';
         } else {
             alert('Failed to send message.');
         }
